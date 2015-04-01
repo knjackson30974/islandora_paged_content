@@ -32,7 +32,7 @@ function islandora_paged_content_upload_page_form(array $form, array &$form_stat
     'file' => array(
       '#title' => t('Page'),
       '#type' => 'managed_file',
-      '#description' => t('Select an image to upload.<br/>Files must be less than <b>@size MB.</b><br/>Allowed file types: <b>@ext.</b>', array('@size' => $upload_size, '@ext' => $extensions[0])),
+      '#description' => t('Select an image to upload.<br/>Files must be less than <strong>@size MB.</strong><br/>Allowed file types: <strong>@ext.</strong>', array('@size' => $upload_size, '@ext' => $extensions[0])),
       '#default_value' => $get_default_value('files', NULL),
       '#upload_location' => 'temporary://',
       '#required' => TRUE,

@@ -99,7 +99,7 @@ function islandora_paged_content_manage_pages_pdf_form(array $form, array &$form
   return array(
     'description' => array(
       '#type' => 'item',
-      '#description' => t('You must have both <b>ImageMagick</b> and <b>GhostScript</b> installed to create/combine PDF files.<br/> This will also update the PDF datastreams for each Page object.'),
+      '#description' => t('You must have both <strong>ImageMagick</strong> and <strong>GhostScript</strong> installed to create/combine PDF files.<br/> This will also update the PDF datastreams for each Page object.'),
     ),
     'dpi' => array(
       '#type' => 'select',
@@ -163,7 +163,7 @@ function islandora_paged_content_manage_pages_ocr_form(array $form, array &$form
   return array(
     'description' => array(
       '#type' => 'item',
-      '#description' => t('You must have <b>Tesseract</b> installed to perform OCR.<br/> This will update the OCR and HOCR datastreams for each Page object.'),
+      '#description' => t('You must have <strong>Tesseract</strong> installed to perform OCR.<br/> This will update the OCR and HOCR datastreams for each Page object.'),
     ),
     'language' => array(
       '#access' => $can_derive,
@@ -263,7 +263,7 @@ function islandora_paged_content_manage_pages_images_form(array $form, array &$f
   return array(
     'description' => array(
       '#type' => 'item',
-      '#description' => t('You must have the <b>Large Image Solution Pack</b> installed to create image derivatives.<br/> This will update the TN, JPG and JP2 datastreams for each page object.'),
+      '#description' => t('You must have the <strong>Large Image Solution Pack</strong> installed to create image derivatives.<br/> This will update the TN, JPG and JP2 datastreams for each page object.'),
     ),
     'submit' => array(
       '#disabled' => !$can_derive,
@@ -591,7 +591,7 @@ function islandora_paged_content_zipped_upload_form(array $form, array &$form_st
     '#title' => t('Compressed images file.'),
     '#type' => 'managed_file',
     '#required' => TRUE,
-    '#description' => t('Select file to upload.<br/>Files must be less than <b>@size MB.</b><br/>Allowed file types: <b>@ext.</b>', array('@size' => $upload_size, '@ext' => $extensions[0])),
+    '#description' => t('Select file to upload.<br/>Files must be less than <strong>@size MB.</strong><br/>Allowed file types: <strong>@ext.</strong>', array('@size' => $upload_size, '@ext' => $extensions[0])),
     '#default_value' => isset($form_state['values']['files']) ? $form_state['values']['files'] : NULL,
     '#upload_location' => 'temporary://',
     '#upload_validators' => array(

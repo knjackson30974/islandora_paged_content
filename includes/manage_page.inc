@@ -80,7 +80,7 @@ function islandora_paged_content_manage_page_ocr_form(array $form, array &$form_
   return array(
     'description' => array(
       '#type' => 'item',
-      '#description' => t('You must have <b>Islandora OCR</b> installed to create OCR/HOCR files.'),
+      '#description' => t('You must have <strong>Islandora OCR</strong> installed to create OCR/HOCR files.'),
     ),
     'language' => array(
       '#title' => t('Language'),
@@ -142,7 +142,7 @@ function islandora_paged_content_manage_page_images_form(array $form, array &$fo
   return array(
     'description' => array(
       '#type' => 'item',
-      '#description' => t('You must have the <b>Large Image Solution Pack</b> installed to create images.<br/>This will update the TN, JPG and JP2 datastreams.'),
+      '#description' => t('You must have the <strong>Large Image Solution Pack</strong> installed to create images.<br/>This will update the TN, JPG and JP2 datastreams.'),
     ),
     'submit' => array(
       '#disabled' => !$can_derive,
@@ -195,7 +195,7 @@ function islandora_paged_content_manage_page_pdf_form(array $form, array &$form_
   return array(
     'description' => array(
       '#type' => 'item',
-      '#description' => t('You must have <b>ImageMagick</b> installed to create PDF files.'),
+      '#description' => t('You must have <strong>ImageMagick</strong> installed to create PDF files.'),
     ),
     'dpi' => array(
       '#type' => 'select',
